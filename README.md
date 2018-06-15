@@ -1,12 +1,12 @@
 # Terraform Basic_Sub_Module
 
-This is the module for deployment of IBM cloud Private-CE 2.1.0 . Using this sub_module one can deploy IBM Cloud Private-CE 2.1.0 in [Basic topology][1].
+This is the module for deployment of IBM Cloud Private-CE 2.1.0 . Using this sub_module one can deploy IBM Cloud Private-CE 2.1.0 in [Basic topology][1].
 
 [1]: https://www.ibm.com/developerworks/community/blogs/5092bd93-e659-4f89-8de2-a7ac980487f0/entry/Availability_considerations_for_single_ICP_cluster_topologies?lang=en
 
 # Prerequisites
 
-For ICP cluster deployment, It needs key-value-pair, number of worker nodes and path of image in main.tf 
+For ICP cluster deployment, It needs ssh key-value-pair, number of worker nodes and images path in main.tf 
 
 ## For configuration of cloud-init required steps
 
@@ -22,20 +22,3 @@ For ICP cluster deployment, It needs key-value-pair, number of worker nodes and 
 |worker_img_path          |            |Yes     |Path of the image for worker node | main.tf
 |ssh_private_key_path          |  Path of SSH private key pair|Yes |Using this key you can log into created cluster nodes  |main.tf
 |ssh_public_key_path          |  Path of SSH public key pair|Yes  |This key for password-less authentication with private key |main.tf
-
-
-# IBM Cloud Private Cluster Configuration
-
-If One wants other configuration instead of default configuration(like cluster_password,cluster_name), you can edit [config.yaml][2] file which is present in "scripts" folder. 
-
-[2]: https://www.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/installing/config_yaml.html
-
-# To add extra worker node to Existing Cluster
-
-After installing IBM cloud Private-CE 2.1.0, edit "main.tf" add count for extra worker nodes. After that do "terraform apply" .
-
-# Troubleshooting
-If ICP private installation fails, refer [Troubleshooting][5] of ICP
-
-[5]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0/troubleshoot/troubleshoot.html
-
