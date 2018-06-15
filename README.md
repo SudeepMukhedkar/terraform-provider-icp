@@ -6,12 +6,12 @@ This is the module for deployment of IBM cloud Private-CE 2.1.0 . Using this sub
 
 # Prerequisites
 
-For icp cluster deployment, It needs [ssh-key-value](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604), number of worker nodes and path of image in main.tf 
+For ICP cluster deployment, It needs key-value-pair, number of worker nodes and path of image in main.tf 
 
 ## For configuration of cloud-init required steps
 
-- cat your public key  
-- past your public key(.pub)at <paste_your_public_key_here> in /node_config/master_config , /node_config/worker_config & /node_config/extraworker_config files
+- generate your ssh [ssh-key-value](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604)  
+- past your public key(.pub) at <paste_your_public_key_here> in /node_config/master_config , /node_config/worker_config & /node_config/extraworker_config files
 
 ## Inputs( Edit is partially done)
 | Variable           | Default       |Required| Description                            |File Location
