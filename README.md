@@ -20,5 +20,5 @@ For ICP cluster deployment, It needs ssh key-value-pair, number of worker nodes 
 |extra_worker          | 0              |Optional*     |Number of extra worker nodes count  |main.tf
 |master_img_path          | url/HostPath        |Yes     |Path of the image for master node | main.tf
 |worker_img_path          |    url/HostPath        |Yes     |Path of the image for worker node | main.tf
-|ssh_private_key_path          |  Path of SSH private key pair|Yes |Using this key you can log into created cluster nodes  |main.tf
-|ssh_public_key_path          |  Path of SSH public key pair|Yes  |This key for password-less authentication with private key |main.tf
+|ssh_private_key_path          |  Path of SSH private key |Yes |Using this key you can log into created cluster nodes  |main.tf
+|ssh_public_key_path          |  Path of SSH public key |Yes  |This key for password-less authentication with private key |main.tf
