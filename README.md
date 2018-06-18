@@ -14,7 +14,7 @@ For ICP cluster deployment, It needs ssh key-value-pair, number of worker nodes 
 - generate your ssh [ssh-key-value](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604) 
 - past your public key(.pub) at <paste_your_public_key_here> in node_config/master_config , node_config/worker_config , node_config/extraworker_config , node_config/proxy_config , node_config/mng_config & node_config/boot_config files
 - set root user password for guest nodes at <set_your_root_user_password> in node_config/master_config , node_config/worker_config , node_config/extraworker_config , node_config/proxy_config , node_config/mng_config & node_config/boot_config
-- If one wants some services or packages installed on specific node ( boot , master etc) then one can edit in specific node's config file in node_config folder. 
+- Using node config file in node_config folder , one can add some extra services or packages in node. 
 
 ## Inputs
 | Variable           | Default       |Required| Description                            |File Location
